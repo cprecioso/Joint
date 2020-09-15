@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Dutch Class",
+    "interval": { "start": 621788400, "duration": 2400 },
+    "_providerData": {
+      "meetingId": "98416890932",
+      "serviceId": "zoom.us",
+      "launchUrls": [
+        "zoommtg://zoom.us/join?confno=98416890932&pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09",
+        "zoomus://zoom.us/join?confno=98416890932&pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09",
+        "https://zoom.us/j/98416890932?pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09"
+      ]
+    }
+  },
+  {
+    "title": "Dutch Class",
+    "interval": { "start": 622047600, "duration": 2400 },
+    "_providerData": {
+      "meetingId": "95008683261",
+      "serviceId": "zoom.us",
+      "launchUrls": [
+        "zoommtg://zoom.us/join?confno=95008683261&pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09",
+        "zoomus://zoom.us/join?confno=95008683261&pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09",
+        "https://zoom.us/j/95008683261?pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09"
+      ]
+    }
+  },
+  {
+    "title": "Dutch Class",
+    "interval": { "start": 622393200, "duration": 2400 },
+    "_providerData": {
+      "meetingId": "98416890932",
+      "serviceId": "zoom.us",
+      "launchUrls": [
+        "zoommtg://zoom.us/join?confno=98416890932&pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09",
+        "zoomus://zoom.us/join?confno=98416890932&pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09",
+        "https://zoom.us/j/98416890932?pwd=ZnFVTG9CaDBZSk5NN0VzOW56S0p4QT09"
+      ]
+    }
+  },
+  {
+    "title": "Dutch Class",
+    "interval": { "start": 622652400, "duration": 2400 },
+    "_providerData": {
+      "meetingId": "95008683261",
+      "serviceId": "zoom.us",
+      "launchUrls": [
+        "zoommtg://zoom.us/join?confno=95008683261&pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09",
+        "zoomus://zoom.us/join?confno=95008683261&pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09",
+        "https://zoom.us/j/95008683261?pwd=NlJoRWpLOU1Md2w5R3pjeEhHVVc4Zz09"
+      ]
+    }
+  }
+]

@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0711584D250E6A1F00295D33 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711584C250E6A1F00295D33 /* Popover.swift */; };
+		078737B5250E719000415C8E /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B4250E719000415C8E /* MeetingRow.swift */; };
+		078737B9250E740000415C8E /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B8250E740000415C8E /* MeetingList.swift */; };
+		078737BB250E781700415C8E /* FailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737BA250E781700415C8E /* FailMainView.swift */; };
+		07D28869250B81E20050AE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28868250B81E20050AE8D /* AppDelegate.swift */; };
+		07D2886B250B81E20050AE8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2886A250B81E20050AE8D /* MainView.swift */; };
+		07D2886D250B81E60050AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886C250B81E60050AE8D /* Assets.xcassets */; };
+		07D28870250B81E60050AE8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886F250B81E60050AE8D /* Preview Assets.xcassets */; };
+		07D28873250B81E60050AE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D28871250B81E60050AE8D /* Main.storyboard */; };
+		07D2887F250B8CB40050AE8D /* EventFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* EventFinder.swift */; };
+		07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
+		07D28884250D53280050AE8D /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
+		07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0711584C250E6A1F00295D33 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		078737B4250E719000415C8E /* MeetingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRow.swift; sourceTree = "<group>"; };
+		078737B8250E740000415C8E /* MeetingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingList.swift; sourceTree = "<group>"; };
+		078737BA250E781700415C8E /* FailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailMainView.swift; sourceTree = "<group>"; };
+		07D28865250B81E20050AE8D /* Joint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D28868250B81E20050AE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07D2886A250B81E20050AE8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		07D2886C250B81E60050AE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07D2886F250B81E60050AE8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07D28872250B81E60050AE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07D28874250B81E60050AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D28875250B81E60050AE8D /* Joint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joint.entitlements; sourceTree = "<group>"; };
+		07D2887E250B8CB40050AE8D /* EventFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFinder.swift; sourceTree = "<group>"; };
+		07D28880250D530B0050AE8D /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
+		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingProviderRegistry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07D28862250B81E20050AE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0711584E250E6BB700295D33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0711584C250E6A1F00295D33 /* Popover.swift */,
+				07D2886A250B81E20050AE8D /* MainView.swift */,
+				078737B4250E719000415C8E /* MeetingRow.swift */,
+				078737B8250E740000415C8E /* MeetingList.swift */,
+				078737BA250E781700415C8E /* FailMainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0711584F250E6BE100295D33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07D2887E250B8CB40050AE8D /* EventFinder.swift */,
+				07D28882250D53190050AE8D /* Meeting */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07D2885C250B81E20050AE8D = {
+			isa = PBXGroup;
+			children = (
+				07D28867250B81E20050AE8D /* Joint */,
+				07D28866250B81E20050AE8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07D28866250B81E20050AE8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D28865250B81E20050AE8D /* Joint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07D28867250B81E20050AE8D /* Joint */ = {
+			isa = PBXGroup;
+			children = (
+				07D28868250B81E20050AE8D /* AppDelegate.swift */,
+				07D2886C250B81E60050AE8D /* Assets.xcassets */,
+				07D28871250B81E60050AE8D /* Main.storyboard */,
+				07D28874250B81E60050AE8D /* Info.plist */,
+				07D28875250B81E60050AE8D /* Joint.entitlements */,
+				07D2886E250B81E60050AE8D /* Preview Content */,
+				0711584F250E6BE100295D33 /* Model */,
+				0711584E250E6BB700295D33 /* Views */,
+			);
+			path = Joint;
+			sourceTree = "<group>";
+		};
+		07D2886E250B81E60050AE8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07D2886F250B81E60050AE8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07D28882250D53190050AE8D /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				07D28883250D53280050AE8D /* Meeting.swift */,
+				07D28880250D530B0050AE8D /* ZoomMeeting.swift */,
+				07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07D28864250B81E20050AE8D /* Joint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D28878250B81E60050AE8D /* Build configuration list for PBXNativeTarget "Joint" */;
+			buildPhases = (
+				07D28861250B81E20050AE8D /* Sources */,
+				07D28862250B81E20050AE8D /* Frameworks */,
+				07D28863250B81E20050AE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Joint;
+			productName = Joint;
+			productReference = 07D28865250B81E20050AE8D /* Joint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07D2885D250B81E20050AE8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Carlos Precioso";
+				TargetAttributes = {
+					07D28864250B81E20050AE8D = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 07D28860250B81E20050AE8D /* Build configuration list for PBXProject "Joint" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07D2885C250B81E20050AE8D;
+			productRefGroup = 07D28866250B81E20050AE8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07D28864250B81E20050AE8D /* Joint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07D28863250B81E20050AE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D28873250B81E60050AE8D /* Main.storyboard in Resources */,
+				07D28870250B81E60050AE8D /* Preview Assets.xcassets in Resources */,
+				07D2886D250B81E60050AE8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07D28861250B81E20050AE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D28884250D53280050AE8D /* Meeting.swift in Sources */,
+				078737BB250E781700415C8E /* FailMainView.swift in Sources */,
+				07D2886B250B81E20050AE8D /* MainView.swift in Sources */,
+				07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */,
+				078737B9250E740000415C8E /* MeetingList.swift in Sources */,
+				078737B5250E719000415C8E /* MeetingRow.swift in Sources */,
+				07D2887F250B8CB40050AE8D /* EventFinder.swift in Sources */,
+				07D28869250B81E20050AE8D /* AppDelegate.swift in Sources */,
+				07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */,
+				0711584D250E6A1F00295D33 /* Popover.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07D28871250B81E60050AE8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D28872250B81E60050AE8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07D28876250B81E60050AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07D28877250B81E60050AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		07D28879250B81E60050AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Joint/Joint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Joint/Preview Content\"";
+				DEVELOPMENT_TEAM = K6ZPYZVLC6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Joint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlos.Joint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		07D2887A250B81E60050AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Joint/Joint.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Joint/Preview Content\"";
+				DEVELOPMENT_TEAM = K6ZPYZVLC6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Joint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlos.Joint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07D28860250B81E20050AE8D /* Build configuration list for PBXProject "Joint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D28876250B81E60050AE8D /* Debug */,
+				07D28877250B81E60050AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D28878250B81E60050AE8D /* Build configuration list for PBXNativeTarget "Joint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D28879250B81E60050AE8D /* Debug */,
+				07D2887A250B81E60050AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07D2885D250B81E20050AE8D /* Project object */;
+}
