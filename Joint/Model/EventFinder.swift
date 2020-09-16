@@ -36,8 +36,8 @@ func getEntriesFromEvents() -> [Meeting] {
 
 	let pred = store.predicateForEvents(
 		withStart: Date(
-			timeIntervalSinceNow: -(24 /* hours */ * 60 /* minutes */ * 60 /* seconds */)),
-		end: Date(timeIntervalSinceNow: 1_209_600 /* two weeks */),
+			timeIntervalSinceNow: -86400 /* 24 hours ago */),
+		end: Date(timeIntervalSinceNow: 1_209_600 /* 2 weeks in the future */),
 		calendars: nil)
 
 	let events = store.events(matching: pred)
