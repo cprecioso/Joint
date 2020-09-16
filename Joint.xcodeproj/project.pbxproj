@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0711584D250E6A1F00295D33 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711584C250E6A1F00295D33 /* Popover.swift */; };
 		0773035C2512401F004300BC /* openUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035B2512401F004300BC /* openUrls.swift */; };
+		0773035F25126038004300BC /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035E25126038004300BC /* Providers.swift */; };
 		078737B5250E719000415C8E /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B4250E719000415C8E /* MeetingRow.swift */; };
 		078737B9250E740000415C8E /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B8250E740000415C8E /* MeetingList.swift */; };
 		078737BB250E781700415C8E /* FailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737BA250E781700415C8E /* FailMainView.swift */; };
@@ -21,12 +22,12 @@
 		07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* MeetingFinder.swift */; };
 		07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
 		07D28884250D53280050AE8D /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
-		07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0711584C250E6A1F00295D33 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
 		0773035B2512401F004300BC /* openUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openUrls.swift; sourceTree = "<group>"; };
+		0773035E25126038004300BC /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		078737B4250E719000415C8E /* MeetingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRow.swift; sourceTree = "<group>"; };
 		078737B8250E740000415C8E /* MeetingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingList.swift; sourceTree = "<group>"; };
 		078737BA250E781700415C8E /* FailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailMainView.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		07D2887E250B8CB40050AE8D /* MeetingFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFinder.swift; sourceTree = "<group>"; };
 		07D28880250D530B0050AE8D /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
 		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
-		07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingProviderRegistry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				07D28883250D53280050AE8D /* Meeting.swift */,
-				07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */,
+				0773035E25126038004300BC /* Providers.swift */,
 				07D28880250D530B0050AE8D /* ZoomMeeting.swift */,
 				07B333B725122DF4008372F3 /* JitsiMeeting.swift */,
 			);
@@ -219,7 +219,7 @@
 				0773035C2512401F004300BC /* openUrls.swift in Sources */,
 				078737BB250E781700415C8E /* FailMainView.swift in Sources */,
 				07D2886B250B81E20050AE8D /* MainView.swift in Sources */,
-				07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */,
+				0773035F25126038004300BC /* Providers.swift in Sources */,
 				078737B9250E740000415C8E /* MeetingList.swift in Sources */,
 				078737B5250E719000415C8E /* MeetingRow.swift in Sources */,
 				07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */,

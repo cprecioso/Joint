@@ -12,7 +12,7 @@ struct Meeting: Codable, Identifiable {
 	init?(title: String, from startDate: Date, to endDate: Date, url: URL) {
 		self.title = title
 		self.interval = DateInterval(start: startDate, end: endDate)
-		guard let providerData = MeetingProviderRegistry.shared.dataFor(url: url) else {
+		guard let providerData = providerDataFor(url: url) else {
 			return nil
 		}
 		self._providerData = providerData
