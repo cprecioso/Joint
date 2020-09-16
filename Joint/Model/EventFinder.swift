@@ -15,9 +15,9 @@ func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 		set.insert(url)
 	}
 
-	if let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue) {
-
-		let input = evt.description
+	if let input = evt.notes,
+		let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+	{
 		let matches = detector.matches(in: input, options: [], range: NSMakeRange(0, input.count))
 
 		for match in matches {
