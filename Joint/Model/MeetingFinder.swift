@@ -31,9 +31,9 @@ fileprivate func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 	return set
 }
 
-func fetchMeetings() -> [Meeting] {
-	let store = EKEventStore()
+let eventStore = EKEventStore()
 
+func fetchMeetings() -> [Meeting] {
 	let pred = store.predicateForEvents(
 		withStart: Date(
 			timeIntervalSinceNow: -86400 /* 24 hours ago */),

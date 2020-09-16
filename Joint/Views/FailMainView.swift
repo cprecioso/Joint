@@ -35,7 +35,7 @@ struct UnaskedView: View {
 			Text("We need access to your calendar").font(.callout)
 			Text("We will scan upcoming events and show you any online meetings here.")
 			Button("Allow Calendar access") {
-				EKEventStore().requestAccess(to: .event) { _, _ in
+				eventStore.requestAccess(to: .event) { _, _ in
 					if let fn = self.refresherFn {
 						fn()
 					}
