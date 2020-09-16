@@ -13,7 +13,8 @@ class MeetingProviderRegistry {
 	private init() {}
 
 	let parsers = [
-		parseZoomMeeting
+		parseZoomMeeting,
+		parseJitsiMeeting,
 	]
 
 	func dataFor(url: URL) -> MeetingProviderData? {
