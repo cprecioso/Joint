@@ -6,6 +6,7 @@
 //  Copyright © 2020 Carlos Precioso. All rights reserved.
 //
 
+import Combine
 import EventKit
 
 fileprivate func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
@@ -33,7 +34,7 @@ fileprivate func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 
 let eventStore = EKEventStore()
 
-func fetchMeetings() -> [Meeting] {
+func fetchMeetings(from store: EKEventStore) -> [Meeting] {
 	let pred = store.predicateForEvents(
 		withStart: Date(
 			timeIntervalSinceNow: -86400 /* 24 hours ago */),
@@ -55,4 +56,15 @@ func fetchMeetings() -> [Meeting] {
 	}
 
 	return entries
+}
+
+func makeMeetingPublisher() -> AnyPublisher<[Meeting], Never> {
+	return Just(eventStore)
+		.flatMap(maxPublishers: .max(1)) { store in
+			NotificationCenter.default.publisher(for: .EKEventStoreChanged, object: store)
+				.map { _ in store }
+				.prepend(store)
+		}
+		.map { store in fetchMeetings(from: store) }
+		.eraseToAnyPublisher()
 }

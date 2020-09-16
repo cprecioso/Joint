@@ -9,19 +9,22 @@
 import SwiftUI
 
 struct MeetingList: View {
-	@State var meetings: [Meeting] = fetchMeetings()
-	let timer = Timer.publish(every: 10, on: .main, in: .common)
+	let meetingPublisher = makeMeetingPublisher().makeConnectable().autoconnect()
+
+	@State var meetings: [Meeting] = []
 
 	var body: some View {
-		if meetings.count > 0 {
-			return AnyView(
-				ForEach(meetings.filter { $0.interval.end > Date() }) { MeetingRow(meeting: $0) }
-					.onReceive(timer) { _ in
-						self.meetings = fetchMeetings()
+		Group<AnyView> {
+			if self.meetings.count > 0 {
+				return AnyView(
+					ForEach(meetings.filter { $0.interval.end > Date() }) {
+						MeetingRow(meeting: $0)
 					})
-		} else {
-			return AnyView(EmptyView())
+			} else {
+				return AnyView(EmptyView())
+			}
 		}
+		.onReceive(self.meetingPublisher) { self.meetings = $0 }
 	}
 }
 
