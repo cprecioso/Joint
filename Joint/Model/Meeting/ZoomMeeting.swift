@@ -21,20 +21,25 @@ func parseZoomMeeting(_ url: URL) -> MeetingProviderData? {
 
 fileprivate struct ZoomParams {
 	let conferenceId: String,
-		conferencePassword: String?
+		conferencePassword: String?,
+		conferenceTk: String?
 }
 
 fileprivate func extractParams(_ url: URL) -> ZoomParams? {
 	if url.host?.hasSuffix("zoom.us") ?? false {
-		if url.pathComponents.count >= 3 && url.pathComponents[1] == "j"
+		if url.pathComponents.count >= 3
+			&& (url.pathComponents[1] == "j" || url.pathComponents[1] == "w")
 			&& !(url.pathComponents[2].isEmpty)
 		{
+			let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
 			return ZoomParams(
 				conferenceId: url.pathComponents[2],
-				conferencePassword: URLComponents(url: url, resolvingAgainstBaseURL: false)?
-					.queryItems?.first {
-						$0.name == "pwd" && !($0.value?.isEmpty ?? true)
-					}?.value
+				conferencePassword: queryItems?.first {
+					$0.name == "pwd" && !($0.value?.isEmpty ?? true)
+				}?.value,
+				conferenceTk: queryItems?.first {
+					$0.name == "tk" && !($0.value?.isEmpty ?? true)
+				}?.value
 			)
 		}
 	}
@@ -45,8 +50,8 @@ fileprivate func extractParams(_ url: URL) -> ZoomParams? {
 fileprivate func createUrls(_ params: ZoomParams) -> [URL] {
 	return
 		([
-			"zoommtg://zoom.us/join?confno=\(params.conferenceId)&pwd=\(params.conferencePassword ?? "")",
-			"zoomus://zoom.us/join?confno=\(params.conferenceId)&pwd=\(params.conferencePassword ?? "")",
-			"https://zoom.us/j/\(params.conferenceId)?pwd=\(params.conferencePassword ?? "")",
+			"zoommtg://zoom.us/join?confno=\(params.conferenceId)&pwd=\(params.conferencePassword ?? "")&tk=\(params.conferenceTk ?? "")",
+			"zoomus://zoom.us/join?confno=\(params.conferenceId)&pwd=\(params.conferencePassword ?? "")&tk=\(params.conferenceTk ?? "")",
+			"https://zoom.us/j/\(params.conferenceId)?pwd=\(params.conferencePassword ?? "")&tk=\(params.conferenceTk ?? "")",
 		].compactMap { URL(string: $0) })
 }
