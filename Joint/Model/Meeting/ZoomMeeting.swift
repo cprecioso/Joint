@@ -26,25 +26,21 @@ fileprivate struct ZoomParams {
 }
 
 fileprivate func extractParams(_ url: URL) -> ZoomParams? {
-	if url.host?.hasSuffix("zoom.us") ?? false {
-		if url.pathComponents.count >= 3
+	guard
+		(url.host?.hasSuffix("zoom.us") ?? false) && url.pathComponents.count >= 3
 			&& (url.pathComponents[1] == "j" || url.pathComponents[1] == "w")
 			&& !(url.pathComponents[2].isEmpty)
-		{
-			let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
-			return ZoomParams(
-				conferenceId: url.pathComponents[2],
-				conferencePassword: queryItems?.first {
-					$0.name == "pwd" && !($0.value?.isEmpty ?? true)
-				}?.value,
-				conferenceTk: queryItems?.first {
-					$0.name == "tk" && !($0.value?.isEmpty ?? true)
-				}?.value
-			)
-		}
+	else {
+		return nil
 	}
 
-	return nil
+	let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
+	return ZoomParams(
+		conferenceId: url.pathComponents[2],
+		conferencePassword: queryItems?.first { $0.name == "pwd" && !($0.value?.isEmpty ?? true) }?
+			.value,
+		conferenceTk: queryItems?.first { $0.name == "tk" && !($0.value?.isEmpty ?? true) }?.value
+	)
 }
 
 fileprivate func createUrls(_ params: ZoomParams) -> [URL] {
