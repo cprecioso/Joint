@@ -1,5 +1,5 @@
 //
-//  EventFinder.swift
+//  MeetingFinder.swift
 //  Joint
 //
 //  Created by Carlos Precioso on 11/09/2020.
@@ -8,7 +8,7 @@
 
 import EventKit
 
-func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
+fileprivate func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 	var set = Set<URL>()
 
 	if let url = evt.url {
@@ -31,7 +31,7 @@ func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 	return set
 }
 
-func getEntriesFromEvents() -> [Meeting] {
+func fetchMeetings() -> [Meeting] {
 	let store = EKEventStore()
 
 	let pred = store.predicateForEvents(

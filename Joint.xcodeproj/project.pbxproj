@@ -16,7 +16,7 @@
 		07D2886D250B81E60050AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886C250B81E60050AE8D /* Assets.xcassets */; };
 		07D28870250B81E60050AE8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886F250B81E60050AE8D /* Preview Assets.xcassets */; };
 		07D28873250B81E60050AE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D28871250B81E60050AE8D /* Main.storyboard */; };
-		07D2887F250B8CB40050AE8D /* EventFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* EventFinder.swift */; };
+		07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* MeetingFinder.swift */; };
 		07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
 		07D28884250D53280050AE8D /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
 		07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */; };
@@ -35,7 +35,7 @@
 		07D28872250B81E60050AE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07D28874250B81E60050AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D28875250B81E60050AE8D /* Joint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Joint.entitlements; sourceTree = "<group>"; };
-		07D2887E250B8CB40050AE8D /* EventFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFinder.swift; sourceTree = "<group>"; };
+		07D2887E250B8CB40050AE8D /* MeetingFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFinder.swift; sourceTree = "<group>"; };
 		07D28880250D530B0050AE8D /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
 		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingProviderRegistry.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		0711584F250E6BE100295D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				07D2887E250B8CB40050AE8D /* EventFinder.swift */,
+				07D2887E250B8CB40050AE8D /* MeetingFinder.swift */,
 				07D28882250D53190050AE8D /* Meeting */,
 			);
 			path = Model;
@@ -199,7 +199,7 @@
 				07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */,
 				078737B9250E740000415C8E /* MeetingList.swift in Sources */,
 				078737B5250E719000415C8E /* MeetingRow.swift in Sources */,
-				07D2887F250B8CB40050AE8D /* EventFinder.swift in Sources */,
+				07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */,
 				07D28869250B81E20050AE8D /* AppDelegate.swift in Sources */,
 				07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */,
 				0711584D250E6A1F00295D33 /* Popover.swift in Sources */,

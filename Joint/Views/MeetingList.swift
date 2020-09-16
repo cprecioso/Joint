@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MeetingList: View {
-	@State var meetings: [Meeting] = getEntriesFromEvents()
+	@State var meetings: [Meeting] = fetchMeetings()
 	let timer = Timer.publish(every: 10, on: .main, in: .common)
 
 	var body: some View {
@@ -17,7 +17,7 @@ struct MeetingList: View {
 			return AnyView(
 				ForEach(meetings.filter { $0.interval.end > Date() }) { MeetingRow(meeting: $0) }
 					.onReceive(timer) { _ in
-						self.meetings = getEntriesFromEvents()
+						self.meetings = fetchMeetings()
 					})
 		} else {
 			return AnyView(EmptyView())
