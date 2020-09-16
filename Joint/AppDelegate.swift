@@ -23,7 +23,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		if let button = statusItem.button {
 			button.image = NSImage(named: "StatusBarIcon-Enabled")
 			button.imagePosition = .imageTrailing
-			button.title = "Joint"
 			button.action = #selector(self.togglePopover)
 		}
 
