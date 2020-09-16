@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0711584D250E6A1F00295D33 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711584C250E6A1F00295D33 /* Popover.swift */; };
+		0773035C2512401F004300BC /* openUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035B2512401F004300BC /* openUrls.swift */; };
 		078737B5250E719000415C8E /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B4250E719000415C8E /* MeetingRow.swift */; };
 		078737B9250E740000415C8E /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B8250E740000415C8E /* MeetingList.swift */; };
 		078737BB250E781700415C8E /* FailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737BA250E781700415C8E /* FailMainView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0711584C250E6A1F00295D33 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
+		0773035B2512401F004300BC /* openUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openUrls.swift; sourceTree = "<group>"; };
 		078737B4250E719000415C8E /* MeetingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRow.swift; sourceTree = "<group>"; };
 		078737B8250E740000415C8E /* MeetingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingList.swift; sourceTree = "<group>"; };
 		078737BA250E781700415C8E /* FailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailMainView.swift; sourceTree = "<group>"; };
@@ -57,7 +59,6 @@
 		0711584E250E6BB700295D33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0711584C250E6A1F00295D33 /* Popover.swift */,
 				07D2886A250B81E20050AE8D /* MainView.swift */,
 				078737B4250E719000415C8E /* MeetingRow.swift */,
 				078737B8250E740000415C8E /* MeetingList.swift */,
@@ -73,6 +74,24 @@
 				07D28882250D53190050AE8D /* Meeting */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0773035A25123FF8004300BC /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				0773035D25124033004300BC /* macOS */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		0773035D25124033004300BC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				07D28868250B81E20050AE8D /* AppDelegate.swift */,
+				0711584C250E6A1F00295D33 /* Popover.swift */,
+				0773035B2512401F004300BC /* openUrls.swift */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		07D2885C250B81E20050AE8D = {
@@ -94,7 +113,6 @@
 		07D28867250B81E20050AE8D /* Joint */ = {
 			isa = PBXGroup;
 			children = (
-				07D28868250B81E20050AE8D /* AppDelegate.swift */,
 				07D2886C250B81E60050AE8D /* Assets.xcassets */,
 				07D28871250B81E60050AE8D /* Main.storyboard */,
 				07D28874250B81E60050AE8D /* Info.plist */,
@@ -102,6 +120,7 @@
 				07D2886E250B81E60050AE8D /* Preview Content */,
 				0711584F250E6BE100295D33 /* Model */,
 				0711584E250E6BB700295D33 /* Views */,
+				0773035A25123FF8004300BC /* Platform */,
 			);
 			path = Joint;
 			sourceTree = "<group>";
@@ -118,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				07D28883250D53280050AE8D /* Meeting.swift */,
-				07D28880250D530B0050AE8D /* ZoomMeeting.swift */,
 				07DB0426250E3870006DC4F3 /* MeetingProviderRegistry.swift */,
+				07D28880250D530B0050AE8D /* ZoomMeeting.swift */,
 				07B333B725122DF4008372F3 /* JitsiMeeting.swift */,
 			);
 			path = Meeting;
@@ -197,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D28884250D53280050AE8D /* Meeting.swift in Sources */,
+				0773035C2512401F004300BC /* openUrls.swift in Sources */,
 				078737BB250E781700415C8E /* FailMainView.swift in Sources */,
 				07D2886B250B81E20050AE8D /* MainView.swift in Sources */,
 				07DB0427250E3870006DC4F3 /* MeetingProviderRegistry.swift in Sources */,

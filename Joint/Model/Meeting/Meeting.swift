@@ -6,6 +6,8 @@
 //  Copyright © 2020 Carlos Precioso. All rights reserved.
 //
 
+import Foundation
+
 struct Meeting: Codable, Identifiable {
 	init?(title: String, from startDate: Date, to endDate: Date, url: URL) {
 		self.title = title
@@ -29,6 +31,10 @@ struct Meeting: Codable, Identifiable {
 	}
 
 	private var _providerData: MeetingProviderData
+
+	func open(completion: ((Bool) -> Void)? = nil) {
+		return openUrls(self.launchUrls, completion: completion)
+	}
 }
 
 struct MeetingProviderData: Codable {
@@ -36,18 +42,3 @@ struct MeetingProviderData: Codable {
 	let meetingId: String
 	let launchUrls: [URL]
 }
-
-#if os(macOS)
-	import Cocoa
-
-	extension Meeting {
-		func open() -> Bool {
-			for url in self.launchUrls {
-				if NSWorkspace.shared.open(url) {
-					return true
-				}
-			}
-			return false
-		}
-	}
-#endif
