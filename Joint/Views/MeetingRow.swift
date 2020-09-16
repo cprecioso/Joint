@@ -16,7 +16,7 @@ fileprivate enum Status: String {
 
 struct MeetingRow: View {
 	var meeting: Meeting
-	let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+	let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
 
 	fileprivate func calcStatus(from currentTime: Date) -> Status {
 		let diff = (currentTime.distance(to: self.meeting.interval.start))
