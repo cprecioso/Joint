@@ -40,6 +40,7 @@ struct MainView: View {
 			}
 		}
 		.onAppear(perform: refresh)
+		.frame(maxWidth: .infinity, maxHeight: .infinity)
 	}
 }
 
