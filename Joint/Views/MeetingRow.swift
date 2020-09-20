@@ -8,28 +8,11 @@
 
 import SwiftUI
 
-fileprivate enum Status: String {
-	case future = "future"
-	case present = "present"
-	case past = "past"
-}
-
 struct MeetingRow: View {
 	var meeting: Meeting
 	let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
 
-	fileprivate func calcStatus(from currentTime: Date) -> Status {
-		let diff = (currentTime.distance(to: self.meeting.interval.start))
-		if diff > (5 /* minutes */ * 60 /* seconds */) {
-			return .future
-		} else if diff > -(5 /* minutes */ * 60 /* seconds */) {
-			return .present
-		} else {
-			return .past
-		}
-	}
-
-	@State fileprivate var status: Status? = nil
+	@State var status: MeetingStatus?
 
 	var body: some View {
 		HStack {
