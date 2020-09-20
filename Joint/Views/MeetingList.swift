@@ -28,7 +28,7 @@ struct MeetingList: View {
 		}
 		.onReceive(self.meetingPublisher) { self.meetings = $0 }
 		.onReceive(MeetingRow.timer) { date in
-			env.statusBarMessage = meetings.getCurrent(from: date)
+			self.env.statusBarMessage = self.meetings.getCurrent(from: date)
 				.map { $0.title }
 				.joined(separator: " | ")
 		}
