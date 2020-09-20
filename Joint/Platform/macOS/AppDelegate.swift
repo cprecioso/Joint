@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		statusItem.behavior = [.removalAllowed, .terminationOnRemoval]
 		if let button = statusItem.button {
 			button.image = NSImage(named: "StatusBarIcon-Enabled")
-			button.imagePosition = .imageTrailing
+			button.imagePosition = .imageOnly
 			button.action = #selector(self.togglePopover)
 		}
 
@@ -37,7 +37,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	override init() {
 		super.init()
 		self.cancellable = env.$statusBarMessage.sink {
-			self.statusItem?.button?.title = $0
+			if let button = self.statusItem?.button {
+				button.title = $0
+				button.imagePosition = $0.isEmpty ? .imageOnly : .imageTrailing
+			}
 		}
 	}
 
