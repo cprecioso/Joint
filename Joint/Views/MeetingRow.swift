@@ -18,16 +18,16 @@ struct MeetingRow: View {
 		HStack {
 			VStack(alignment: .leading) {
 				({ () -> Text in
-					switch self.status ?? calcStatus(from: Date()) {
-					case .future:
-						return Text(meeting.title)
-							.font(.footnote)
-					case .present:
-						return Text(meeting.title)
-							.font(.headline)
+					switch self.status {
 					case .past:
 						return Text(meeting.title)
 							.font(.footnote).foregroundColor(.gray)
+					case .present:
+						return Text(meeting.title)
+							.font(.headline)
+					default:
+						return Text(meeting.title)
+							.font(.footnote)
 					}
 				}()).lineLimit(2)
 				Text(self.describeMeeting(meeting)).font(.footnote).foregroundColor(
