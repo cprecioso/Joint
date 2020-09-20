@@ -13,6 +13,7 @@ struct MeetingRow: View {
 	static let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect().share()
 
 	@State var status: MeetingStatus?
+	@State var timeDescription: String?
 
 	var body: some View {
 		HStack {
@@ -30,8 +31,9 @@ struct MeetingRow: View {
 							.font(.footnote)
 					}
 				}()).lineLimit(2)
-				Text(self.describeMeeting(meeting)).font(.footnote).foregroundColor(
-					.gray)
+				Text(timeDescription ?? "")
+					.font(.footnote)
+					.foregroundColor(.gray)
 			}
 			Spacer()
 			Button(
@@ -43,6 +45,7 @@ struct MeetingRow: View {
 		.padding()
 		.onReceive(MeetingRow.timer) { date in
 			self.status = self.meeting.calcStatus(from: date)
+			self.timeDescription = self.describeMeeting(currentDate: date)
 		}
 		.background(
 			status == .present
@@ -52,9 +55,7 @@ struct MeetingRow: View {
 		)
 	}
 
-	func describeMeeting(_ meeting: Meeting) -> String {
-		let currentDate = Date()
-
+	func describeMeeting(currentDate: Date) -> String {
 		if currentDate >= meeting.interval.end {
 			return "finished"
 		}
