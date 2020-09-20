@@ -11,6 +11,8 @@ import SwiftUI
 struct MeetingList: View {
 	let meetingPublisher = makeMeetingPublisher().makeConnectable().autoconnect()
 
+	@EnvironmentObject var env: Env
+
 	@State var meetings: [Meeting] = []
 
 	var body: some View {
@@ -25,6 +27,11 @@ struct MeetingList: View {
 			}
 		}
 		.onReceive(self.meetingPublisher) { self.meetings = $0 }
+		.onReceive(MeetingRow.timer) { date in
+			env.statusBarMessage = meetings.getCurrent(from: date)
+				.map { $0.title }
+				.joined(separator: " | ")
+		}
 	}
 }
 
