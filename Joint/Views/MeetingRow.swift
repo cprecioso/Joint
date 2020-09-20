@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MeetingRow: View {
 	var meeting: Meeting
-	let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
+	static let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect().share()
 
 	@State var status: MeetingStatus?
 
@@ -41,8 +41,8 @@ struct MeetingRow: View {
 				})
 		}
 		.padding()
-		.onReceive(timer) {
-			self.status = self.calcStatus(from: $0)
+		.onReceive(MeetingRow.timer) { date in
+			self.status = self.meeting.calcStatus(from: date)
 		}
 		.background(
 			status == .present
