@@ -118,9 +118,9 @@
 				07D28874250B81E60050AE8D /* Info.plist */,
 				07D28875250B81E60050AE8D /* Joint.entitlements */,
 				07D2886E250B81E60050AE8D /* Preview Content */,
+				0773035A25123FF8004300BC /* Platform */,
 				0711584F250E6BE100295D33 /* Model */,
 				0711584E250E6BB700295D33 /* Views */,
-				0773035A25123FF8004300BC /* Platform */,
 			);
 			path = Joint;
 			sourceTree = "<group>";
