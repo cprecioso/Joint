@@ -16,15 +16,18 @@ fileprivate func getUrlsFromEvent(_ evt: EKEvent) -> Set<URL> {
 		set.insert(url)
 	}
 
-	if let input = evt.notes,
-		let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
-	{
+	for input in [evt.notes, evt.location, evt.title] {
+		guard let input = input,
+			let detector = try? NSDataDetector(
+				types: NSTextCheckingResult.CheckingType.link.rawValue)
+		else { continue }
+
 		let matches = detector.matches(in: input, options: [], range: NSMakeRange(0, input.count))
 
 		for match in matches {
-			guard let range = Range(match.range, in: input) else { continue }
-			let urlStr = input[range]
-			guard let url = URL(string: String(urlStr)) else { continue }
+			guard let range = Range(match.range, in: input),
+				let url = URL(string: String(input[range]))
+			else { continue }
 			set.insert(url)
 		}
 	}
