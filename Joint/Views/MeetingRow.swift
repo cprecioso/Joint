@@ -18,19 +18,21 @@ struct MeetingRow: View {
 	var body: some View {
 		HStack {
 			VStack(alignment: .leading) {
-				({ () -> Text in
+				Group {
 					switch self.status {
 					case .past:
-						return Text(meeting.title)
-							.font(.footnote).foregroundColor(.gray)
+						Text(meeting.title)
+							.font(.footnote)
+							.foregroundColor(.gray)
 					case .present:
-						return Text(meeting.title)
+						Text(meeting.title)
 							.font(.headline)
 					default:
-						return Text(meeting.title)
+						Text(meeting.title)
 							.font(.footnote)
 					}
-				}()).lineLimit(2)
+				}
+				.lineLimit(2)
 				Text(timeDescription ?? "")
 					.font(.footnote)
 					.foregroundColor(.gray)
@@ -50,7 +52,8 @@ struct MeetingRow: View {
 		.background(
 			status == .present
 				? Rectangle()
-					.foregroundColor(.accentColor).opacity(0.3)
+					.foregroundColor(.accentColor)
+					.opacity(0.3)
 				: nil
 		)
 	}

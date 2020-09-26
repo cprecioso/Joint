@@ -25,18 +25,18 @@ struct MainView: View {
 	}
 
 	var body: some View {
-		ZStack<AnyView>(alignment: .center) {
+		ZStack(alignment: .center) {
 			switch permissionStatus {
-			case .notDetermined: return AnyView(UnaskedView(refresherFn: refresh))
+			case .notDetermined:
+				UnaskedView(refresherFn: refresh)
 
 			case .authorized:
-				return AnyView(
-					ScrollView {
-						MeetingList()
-					})
+				ScrollView {
+					MeetingList()
+				}
 
 			default:
-				return AnyView(RejectedView())
+				RejectedView()
 			}
 		}
 		.onAppear(perform: refresh)

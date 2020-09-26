@@ -16,14 +16,11 @@ struct MeetingList: View {
 	@State var meetings: [Meeting] = []
 
 	var body: some View {
-		Group<AnyView> {
+		Group {
 			if self.meetings.count > 0 {
-				return AnyView(
-					ForEach(meetings.filter { $0.interval.end > Date() }) {
-						MeetingRow(meeting: $0)
-					})
-			} else {
-				return AnyView(EmptyView())
+				ForEach(meetings.filter { $0.interval.end > Date() }) {
+					MeetingRow(meeting: $0)
+				}
 			}
 		}
 		.onReceive(self.meetingPublisher) { self.meetings = $0 }
