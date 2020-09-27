@@ -33,7 +33,7 @@ struct MeetingRow: View {
 					}
 				}
 				.lineLimit(2)
-				Text(timeDescription ?? "")
+				Text(timeDescription ?? self.describeMeeting(currentDate: Date()))
 					.font(.footnote)
 					.foregroundColor(.gray)
 			}
