@@ -12,6 +12,7 @@ import SwiftUI
 
 #if !(DEBUG)
 import Sparkle
+import LetsMove
 #endif
 
 @NSApplicationMain
@@ -25,6 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     #if !(DEBUG)
     var updater: SUUpdater!
+    
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        PFMoveToApplicationsFolderIfNecessary()
+    }
     #endif
     
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
