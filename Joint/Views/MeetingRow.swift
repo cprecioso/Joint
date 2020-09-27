@@ -39,7 +39,7 @@ struct MeetingRow: View {
 			}
 			Spacer()
 			Button(
-				"Go",
+				"Join",
 				action: {
 					let _ = self.meeting.open()
 				})
