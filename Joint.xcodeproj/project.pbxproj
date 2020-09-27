@@ -25,6 +25,8 @@
 		07E66CF72520F4CA008BBA37 /* VeertlyMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */; };
 		07E66D072520FCC0008BBA37 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D042520FCA7008BBA37 /* Sparkle.framework */; };
 		07E66D082520FCC0008BBA37 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D042520FCA7008BBA37 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07E66D1025210208008BBA37 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D0E25210203008BBA37 /* LetsMove.framework */; };
+		07E66D1125210208008BBA37 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D0E25210203008BBA37 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				07E66D082520FCC0008BBA37 /* Sparkle.framework in Embed Frameworks */,
+				07E66D1125210208008BBA37 /* LetsMove.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeertlyMeeting.swift; sourceTree = "<group>"; };
 		07E66D042520FCA7008BBA37 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		07E66D0E25210203008BBA37 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E66D072520FCC0008BBA37 /* Sparkle.framework in Frameworks */,
+				07E66D1025210208008BBA37 /* LetsMove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				07E66D042520FCA7008BBA37 /* Sparkle.framework */,
+				07E66D0E25210203008BBA37 /* LetsMove.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
