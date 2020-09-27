@@ -23,7 +23,23 @@
 		07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
 		07D28884250D53280050AE8D /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
 		07E66CF72520F4CA008BBA37 /* VeertlyMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */; };
+		07E66D072520FCC0008BBA37 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D042520FCA7008BBA37 /* Sparkle.framework */; };
+		07E66D082520FCC0008BBA37 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07E66D042520FCA7008BBA37 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07E66D092520FCC0008BBA37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07E66D082520FCC0008BBA37 /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0711584C250E6A1F00295D33 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 		07D28880250D530B0050AE8D /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
 		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeertlyMeeting.swift; sourceTree = "<group>"; };
+		07E66D042520FCA7008BBA37 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E66D072520FCC0008BBA37 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +119,7 @@
 			children = (
 				07D28867250B81E20050AE8D /* Joint */,
 				07D28866250B81E20050AE8D /* Products */,
+				07E66CFE2520FC42008BBA37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +166,14 @@
 			path = Meeting;
 			sourceTree = "<group>";
 		};
+		07E66CFE2520FC42008BBA37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E66D042520FCA7008BBA37 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +184,7 @@
 				07D28861250B81E20050AE8D /* Sources */,
 				07D28862250B81E20050AE8D /* Frameworks */,
 				07D28863250B81E20050AE8D /* Resources */,
+				07E66D092520FCC0008BBA37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,6 +403,10 @@
 				DEVELOPMENT_TEAM = K6ZPYZVLC6;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Joint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,6 +431,10 @@
 				DEVELOPMENT_TEAM = K6ZPYZVLC6;
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Joint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
