@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 		self.statusItem = statusItem
 		statusItem.behavior = [.removalAllowed, .terminationOnRemoval]
+		statusItem.isVisible = true
 		if let button = statusItem.button {
 			button.image = NSImage(named: "StatusBarIcon-Enabled")
 			button.imagePosition = .imageOnly
