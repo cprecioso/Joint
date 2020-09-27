@@ -11,6 +11,7 @@ import Foundation
 fileprivate let providers: [(URL) -> MeetingProviderData?] = [
 	parseZoomMeeting,
 	parseJitsiMeeting,
+	parseVeertlyMeeting,
 ]
 
 func providerDataFor(url: URL) -> MeetingProviderData? {

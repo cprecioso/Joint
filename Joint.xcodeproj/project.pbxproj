@@ -22,6 +22,7 @@
 		07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* MeetingFinder.swift */; };
 		07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
 		07D28884250D53280050AE8D /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
+		07E66CF72520F4CA008BBA37 /* VeertlyMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		07D2887E250B8CB40050AE8D /* MeetingFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFinder.swift; sourceTree = "<group>"; };
 		07D28880250D530B0050AE8D /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
 		07D28883250D53280050AE8D /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeertlyMeeting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				0773035E25126038004300BC /* Providers.swift */,
 				07D28880250D530B0050AE8D /* ZoomMeeting.swift */,
 				07B333B725122DF4008372F3 /* JitsiMeeting.swift */,
+				07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */,
 			);
 			path = Meeting;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				07D2887F250B8CB40050AE8D /* MeetingFinder.swift in Sources */,
 				07D28869250B81E20050AE8D /* AppDelegate.swift in Sources */,
 				07B333B825122DF4008372F3 /* JitsiMeeting.swift in Sources */,
+				07E66CF72520F4CA008BBA37 /* VeertlyMeeting.swift in Sources */,
 				07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */,
 				0711584D250E6A1F00295D33 /* Popover.swift in Sources */,
 			);
