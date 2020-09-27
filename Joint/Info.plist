@@ -36,5 +36,13 @@
 	<string>$(PRODUCT_NAME) accesses the last 24 hours and next 2 weeks of events in your calendars, looking for meeting links. $(PRODUCT_NAME) doesn&apos;t process or send this data any further than that.</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>SUFeedURL</key>
+	<string>https://api.appcenter.ms/v0.1/public/sparkle/apps/520035e7-3c1c-4aa8-bdc3-6f06d1caf8c8</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
+	<key>SUShowReleaseNotes</key>
+	<false/>
 </dict>
 </plist>

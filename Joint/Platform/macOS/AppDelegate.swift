@@ -10,6 +10,10 @@ import Cocoa
 import Combine
 import SwiftUI
 
+#if !(DEBUG)
+import Sparkle
+#endif
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -19,6 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 	let popover: NSPopover = Popover()
 	let env = Env()
 
+    #if !(DEBUG)
+    var updater: SUUpdater!
+    #endif
+    
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 		self.statusItem = statusItem
@@ -33,6 +41,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		// Create the SwiftUI view that provides the window contents.
 		let contentView = MainView().environmentObject(self.env)
 		popover.contentViewController = NSHostingController(rootView: contentView)
+        
+        #if !(DEBUG)
+        updater = SUUpdater.init(for: Bundle.init(for: Self.self))
+        updater.checkForUpdatesInBackground()
+        #endif
 	}
 
 	override init() {
