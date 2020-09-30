@@ -27,7 +27,7 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
-	<string>$(PRODUCT_NAME) accesses the last 24 hours and next 2 weeks of events in your calendars, looking for meeting links. $(PRODUCT_NAME) doesn't process or send this data any further than that.</string>
+	<string>$(PRODUCT_NAME) accesses the last 24 hours and next 2 weeks of events in your calendars, looking for meeting links. $(PRODUCT_NAME) doesn&apos;t process or send this data any further than that.</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Carlos Precioso. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>

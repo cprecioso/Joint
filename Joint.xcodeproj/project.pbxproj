@@ -112,6 +112,7 @@
 		0773035D25124033004300BC /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				07D28874250B81E60050AE8D /* Info.plist */,
 				07D28868250B81E20050AE8D /* AppDelegate.swift */,
 				0711584C250E6A1F00295D33 /* Popover.swift */,
 				0773035B2512401F004300BC /* openUrls.swift */,
@@ -141,7 +142,6 @@
 			children = (
 				07D2886C250B81E60050AE8D /* Assets.xcassets */,
 				07D28871250B81E60050AE8D /* Main.storyboard */,
-				07D28874250B81E60050AE8D /* Info.plist */,
 				07D28875250B81E60050AE8D /* Joint.entitlements */,
 				07D2886E250B81E60050AE8D /* Preview Content */,
 				0773035A25123FF8004300BC /* Platform */,
@@ -413,7 +413,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Joint/Info.plist;
+				INFOPLIST_FILE = Joint/Platform/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -441,7 +441,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Joint/Info.plist;
+				INFOPLIST_FILE = Joint/Platform/macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
