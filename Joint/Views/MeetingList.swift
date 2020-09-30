@@ -21,6 +21,9 @@ struct MeetingList: View {
 				ForEach(meetings.filter { $0.interval.end > Date() }) {
 					MeetingRow(meeting: $0)
 				}
+			} else {
+				Text("No meetings in the next two weeks")
+					.padding()
 			}
 		}
 		.onReceive(self.meetingPublisher) { self.meetings = $0 }
