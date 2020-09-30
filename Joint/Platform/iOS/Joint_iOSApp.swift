@@ -13,14 +13,15 @@ struct Joint_iOSApp: App {
 	@Environment(\.openURL) var openURL: OpenURLAction
 
 	var body: some Scene {
-		Group {
-			WindowGroup {
-				NavigationView {
-					MainView()
-						.environmentObject(Env())
-						.navigationTitle(Text("Joint"))
-				}
+		WindowGroup {
+			NavigationView {
+				MainView()
+					.environmentObject(Env())
+					.navigationTitle(Text("Joint"))
 			}
-		}
+			.navigationViewStyle(StackNavigationViewStyle())
+        }
 	}
+    
+    
 }

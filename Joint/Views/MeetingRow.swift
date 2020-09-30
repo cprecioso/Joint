@@ -8,41 +8,52 @@
 
 import SwiftUI
 
+extension Text {
+	fileprivate func applyStatus(_ status: MeetingStatus?) -> some View {
+		switch status {
+		case .past: return self.font(.footnote).foregroundColor(.gray)
+		case .present: return self.font(.headline)
+		default: return self.font(.footnote)
+		}
+	}
+}
+
 struct MeetingRow: View {
 	var meeting: Meeting
-	static let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect().share()
+	static let timer =
+		Timer
+		.publish(every: 1, on: .main, in: .common)
+		.autoconnect()
+		.share()
 
 	@State var status: MeetingStatus?
 	@State var timeDescription: String?
 
-	var body: some View {
+	var navigationLabel: some View {
 		HStack {
 			VStack(alignment: .leading) {
-				Group {
-					switch self.status {
-					case .past:
-						Text(meeting.title)
-							.font(.footnote)
-							.foregroundColor(.gray)
-					case .present:
-						Text(meeting.title)
-							.font(.headline)
-					default:
-						Text(meeting.title)
-							.font(.footnote)
-					}
-				}
-				.lineLimit(2)
+				Text(meeting.title)
+					.applyStatus(self.status)
+					.lineLimit(2)
 				Text(timeDescription ?? self.describeMeeting(currentDate: Date()))
 					.font(.footnote)
 					.foregroundColor(.gray)
 			}
 			Spacer()
-			Button(
-				"Join",
-				action: {
-					let _ = self.meeting.open()
-				})
+			Button("Join", action: { self.meeting.open() })
+		}
+	}
+
+	var body: some View {
+		Group {
+			#if os(iOS)
+				NavigationLink(
+					destination: EventView(event: self.meeting.event),
+					label: { self.navigationLabel }
+				)
+			#else
+				self.navigationLabel
+			#endif
 		}
 		.padding()
 		.onReceive(MeetingRow.timer) { date in

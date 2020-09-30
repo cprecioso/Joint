@@ -32,6 +32,7 @@
 		07B333B825122DF4008372F3 /* JitsiMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B333B725122DF4008372F3 /* JitsiMeeting.swift */; };
 		07BF071D25250257005F8F92 /* Joint_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF071C25250257005F8F92 /* Joint_macOSApp.swift */; };
 		07BF07202525035A005F8F92 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF071F2525035A005F8F92 /* Env.swift */; };
+		07BF073F25252A4F005F8F92 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF073D25252A4F005F8F92 /* EventView.swift */; };
 		07D28869250B81E20050AE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28868250B81E20050AE8D /* AppDelegate.swift */; };
 		07D2886B250B81E20050AE8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2886A250B81E20050AE8D /* MainView.swift */; };
 		07D2886D250B81E60050AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886C250B81E60050AE8D /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		07B333B725122DF4008372F3 /* JitsiMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiMeeting.swift; sourceTree = "<group>"; };
 		07BF071C25250257005F8F92 /* Joint_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint_macOSApp.swift; sourceTree = "<group>"; };
 		07BF071F2525035A005F8F92 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		07BF073D25252A4F005F8F92 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		07D28865250B81E20050AE8D /* Joint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D28868250B81E20050AE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07D2886A250B81E20050AE8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				078737BA250E781700415C8E /* FailMainView.swift */,
 				078737B4250E719000415C8E /* MeetingRow.swift */,
 				07094F1E2524ECA900AD4A63 /* Env.swift */,
+				07BF073D25252A4F005F8F92 /* EventView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A5B9892524E8390070EA25 /* Providers.swift in Sources */,
+				07BF073F25252A4F005F8F92 /* EventView.swift in Sources */,
 				07094F202524ECA900AD4A63 /* Env.swift in Sources */,
 				07094F1C2524EAA300AD4A63 /* openUrls.swift in Sources */,
 				07A5B9852524E8390070EA25 /* JitsiMeeting.swift in Sources */,
