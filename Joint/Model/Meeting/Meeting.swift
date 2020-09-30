@@ -6,6 +6,7 @@
 //  Copyright © 2020 Carlos Precioso. All rights reserved.
 //
 
+import EventKit
 import Foundation
 
 enum MeetingStatus: String {
@@ -14,14 +15,15 @@ enum MeetingStatus: String {
 	case past = "past"
 }
 
-struct Meeting: Codable, Identifiable {
-	init?(title: String, from startDate: Date, to endDate: Date, url: URL) {
+struct Meeting: Identifiable {
+	init?(title: String, event: EKEvent, url: URL) {
 		self.title = title
-		self.interval = DateInterval(start: startDate, end: endDate)
+		self.interval = DateInterval(start: event.startDate, end: event.endDate)
 		guard let providerData = providerDataFor(url: url) else {
 			return nil
 		}
 		self._providerData = providerData
+		self.event = event
 	}
 
 	var id: String {
@@ -52,6 +54,8 @@ struct Meeting: Codable, Identifiable {
 	func open(completion: ((Bool) -> Void)? = nil) {
 		return openUrls(self.launchUrls, completion: completion)
 	}
+
+	let event: EKEvent
 }
 
 struct MeetingProviderData: Codable {

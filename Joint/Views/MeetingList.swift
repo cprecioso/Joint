@@ -34,15 +34,3 @@ struct MeetingList: View {
 		}
 	}
 }
-
-struct MeetingList_Previews: PreviewProvider {
-	static var previews: some View {
-		let asset = NSDataAsset(name: "entries")!
-		let entries = try! JSONDecoder().decode([Meeting].self, from: asset.data)
-
-		return Group {
-			MeetingList(meetings: [])
-			VStack { MeetingList(meetings: entries) }
-		}
-	}
-}

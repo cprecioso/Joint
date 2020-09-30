@@ -68,12 +68,3 @@ struct MeetingRow: View {
 		return formatter.localizedString(for: meeting.interval.start, relativeTo: currentDate)
 	}
 }
-
-struct MeetingRow_Previews: PreviewProvider {
-	static var previews: some View {
-		return MeetingRow(
-			meeting: Meeting(
-				title: "Hola", from: Date(), to: Date(timeIntervalSinceNow: 10),
-				url: URL(string: "https://zoom.us/j/123")!)!)
-	}
-}

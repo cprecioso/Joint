@@ -51,7 +51,7 @@ func fetchMeetings(from store: EKEventStore) -> [Meeting] {
 	for event in events {
 		for url in getUrlsFromEvent(event) {
 			if let meeting = Meeting(
-				title: event.title, from: event.startDate, to: event.endDate, url: url)
+				title: event.title, event: event, url: url)
 			{
 				entries.append(meeting)
 			}
