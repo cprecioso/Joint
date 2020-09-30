@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07094F1C2524EAA300AD4A63 /* openUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07094F1B2524EAA300AD4A63 /* openUrls.swift */; };
+		07094F1F2524ECA900AD4A63 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07094F1E2524ECA900AD4A63 /* Env.swift */; };
+		07094F202524ECA900AD4A63 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07094F1E2524ECA900AD4A63 /* Env.swift */; };
 		0711584D250E6A1F00295D33 /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711584C250E6A1F00295D33 /* Popover.swift */; };
 		0773035C2512401F004300BC /* openUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035B2512401F004300BC /* openUrls.swift */; };
 		0773035F25126038004300BC /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035E25126038004300BC /* Providers.swift */; };
 		078737B5250E719000415C8E /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B4250E719000415C8E /* MeetingRow.swift */; };
 		078737B9250E740000415C8E /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B8250E740000415C8E /* MeetingList.swift */; };
 		078737BB250E781700415C8E /* FailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737BA250E781700415C8E /* FailMainView.swift */; };
+		07A5B96D2524E7430070EA25 /* Joint_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5B96C2524E7430070EA25 /* Joint_iOSApp.swift */; };
+		07A5B97C2524E7BC0070EA25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886F250B81E60050AE8D /* Preview Assets.xcassets */; };
+		07A5B97F2524E8340070EA25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2886A250B81E20050AE8D /* MainView.swift */; };
+		07A5B9802524E8340070EA25 /* FailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737BA250E781700415C8E /* FailMainView.swift */; };
+		07A5B9812524E8340070EA25 /* MeetingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B4250E719000415C8E /* MeetingRow.swift */; };
+		07A5B9822524E8340070EA25 /* MeetingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078737B8250E740000415C8E /* MeetingList.swift */; };
+		07A5B9842524E8390070EA25 /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28880250D530B0050AE8D /* ZoomMeeting.swift */; };
+		07A5B9852524E8390070EA25 /* JitsiMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B333B725122DF4008372F3 /* JitsiMeeting.swift */; };
+		07A5B9862524E8390070EA25 /* MeetingFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2887E250B8CB40050AE8D /* MeetingFinder.swift */; };
+		07A5B9872524E8390070EA25 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D28883250D53280050AE8D /* Meeting.swift */; };
+		07A5B9882524E8390070EA25 /* VeertlyMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E66CF62520F4CA008BBA37 /* VeertlyMeeting.swift */; };
+		07A5B9892524E8390070EA25 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773035E25126038004300BC /* Providers.swift */; };
+		07A5B98B2524E83C0070EA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D2886C250B81E60050AE8D /* Assets.xcassets */; };
 		07B333B825122DF4008372F3 /* JitsiMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B333B725122DF4008372F3 /* JitsiMeeting.swift */; };
 		07BF071D25250257005F8F92 /* Joint_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF071C25250257005F8F92 /* Joint_macOSApp.swift */; };
 		07BF07202525035A005F8F92 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF071F2525035A005F8F92 /* Env.swift */; };
@@ -47,12 +63,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07094F1B2524EAA300AD4A63 /* openUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openUrls.swift; sourceTree = "<group>"; };
+		07094F1E2524ECA900AD4A63 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		0711584C250E6A1F00295D33 /* Popover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popover.swift; sourceTree = "<group>"; };
 		0773035B2512401F004300BC /* openUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openUrls.swift; sourceTree = "<group>"; };
 		0773035E25126038004300BC /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		078737B4250E719000415C8E /* MeetingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRow.swift; sourceTree = "<group>"; };
 		078737B8250E740000415C8E /* MeetingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingList.swift; sourceTree = "<group>"; };
 		078737BA250E781700415C8E /* FailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailMainView.swift; sourceTree = "<group>"; };
+		07A5B96A2524E7430070EA25 /* Joint iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joint iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A5B96C2524E7430070EA25 /* Joint_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Joint_iOSApp.swift; path = Joint/Platform/iOS/Joint_iOSApp.swift; sourceTree = SOURCE_ROOT; };
+		07A5B9752524E7460070EA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Joint/Platform/iOS/Info.plist; sourceTree = SOURCE_ROOT; };
 		07B333B725122DF4008372F3 /* JitsiMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiMeeting.swift; sourceTree = "<group>"; };
 		07BF071C25250257005F8F92 /* Joint_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint_macOSApp.swift; sourceTree = "<group>"; };
 		07BF071F2525035A005F8F92 /* Env.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
@@ -73,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07A5B9672524E7430070EA25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D28862250B81E20050AE8D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +121,7 @@
 				078737B8250E740000415C8E /* MeetingList.swift */,
 				078737BA250E781700415C8E /* FailMainView.swift */,
 				078737B4250E719000415C8E /* MeetingRow.swift */,
+				07094F1E2524ECA900AD4A63 /* Env.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				0773035D25124033004300BC /* macOS */,
+				07A5B96B2524E7430070EA25 /* iOS */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -128,6 +158,16 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		07A5B96B2524E7430070EA25 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				07A5B9752524E7460070EA25 /* Info.plist */,
+				07A5B96C2524E7430070EA25 /* Joint_iOSApp.swift */,
+				07094F1B2524EAA300AD4A63 /* openUrls.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		07D2885C250B81E20050AE8D = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				07D28865250B81E20050AE8D /* Joint.app */,
+				07A5B96A2524E7430070EA25 /* Joint iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +230,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07A5B9692524E7430070EA25 /* Joint iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A5B9782524E7460070EA25 /* Build configuration list for PBXNativeTarget "Joint iOS" */;
+			buildPhases = (
+				07A5B9662524E7430070EA25 /* Sources */,
+				07A5B9672524E7430070EA25 /* Frameworks */,
+				07A5B9682524E7430070EA25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joint iOS";
+			productName = "Joint iOS";
+			productReference = 07A5B96A2524E7430070EA25 /* Joint iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		07D28864250B81E20050AE8D /* Joint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07D28878250B81E60050AE8D /* Build configuration list for PBXNativeTarget "Joint" */;
@@ -213,10 +271,13 @@
 		07D2885D250B81E20050AE8D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Carlos Precioso";
 				TargetAttributes = {
+					07A5B9692524E7430070EA25 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					07D28864250B81E20050AE8D = {
 						CreatedOnToolsVersion = 11.7;
 					};
@@ -236,11 +297,21 @@
 			projectRoot = "";
 			targets = (
 				07D28864250B81E20050AE8D /* Joint */,
+				07A5B9692524E7430070EA25 /* Joint iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07A5B9682524E7430070EA25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A5B97C2524E7BC0070EA25 /* Preview Assets.xcassets in Resources */,
+				07A5B98B2524E83C0070EA25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D28863250B81E20050AE8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +325,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07A5B9662524E7430070EA25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A5B9892524E8390070EA25 /* Providers.swift in Sources */,
+				07094F202524ECA900AD4A63 /* Env.swift in Sources */,
+				07094F1C2524EAA300AD4A63 /* openUrls.swift in Sources */,
+				07A5B9852524E8390070EA25 /* JitsiMeeting.swift in Sources */,
+				07A5B9872524E8390070EA25 /* Meeting.swift in Sources */,
+				07A5B9842524E8390070EA25 /* ZoomMeeting.swift in Sources */,
+				07A5B9882524E8390070EA25 /* VeertlyMeeting.swift in Sources */,
+				07A5B9812524E8340070EA25 /* MeetingRow.swift in Sources */,
+				07A5B96D2524E7430070EA25 /* Joint_iOSApp.swift in Sources */,
+				07A5B97F2524E8340070EA25 /* MainView.swift in Sources */,
+				07A5B9822524E8340070EA25 /* MeetingList.swift in Sources */,
+				07A5B9802524E8340070EA25 /* FailMainView.swift in Sources */,
+				07A5B9862524E8390070EA25 /* MeetingFinder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07D28861250B81E20050AE8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +364,7 @@
 				07E66CF72520F4CA008BBA37 /* VeertlyMeeting.swift in Sources */,
 				07D28881250D530B0050AE8D /* ZoomMeeting.swift in Sources */,
 				0711584D250E6A1F00295D33 /* Popover.swift in Sources */,
+				07094F1F2524ECA900AD4A63 /* Env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +382,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		07A5B9762524E7460070EA25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Joint/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = K6ZPYZVLC6;
+				DISPLAY_NAME = Joint;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Joint/Platform/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos.Joint-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07A5B9772524E7460070EA25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iOS";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Joint/Preview\\ Content/Preview\\ Assets.xcassets";
+				DEVELOPMENT_TEAM = K6ZPYZVLC6;
+				DISPLAY_NAME = Joint;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Joint/Platform/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlos.Joint-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		07D28876250B81E60050AE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,6 +605,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07A5B9782524E7460070EA25 /* Build configuration list for PBXNativeTarget "Joint iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A5B9762524E7460070EA25 /* Debug */,
+				07A5B9772524E7460070EA25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07D28860250B81E20050AE8D /* Build configuration list for PBXProject "Joint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

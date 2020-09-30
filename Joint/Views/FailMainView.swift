@@ -21,6 +21,10 @@ struct RejectedView: View {
 							string:
 								"x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"
 						)!)
+				#else
+					UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!) {
+						_ in
+					}
 				#endif
 			}.padding()
 			Text("Once you've allowed access, please restart the app.")
