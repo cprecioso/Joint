@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 		}
 
 		// Create the SwiftUI view that provides the window contents.
-		let contentView = MainView().environmentObject(self.env)
+		let contentView = Joint_macOSApp(env: self.env)
 		popover.contentViewController = NSHostingController(rootView: contentView)
 
 		#if !(DEBUG)
@@ -76,8 +76,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 			}
 		}
 	}
-}
-
-class Env: ObservableObject {
-	@Published var statusBarMessage: String = ""
 }

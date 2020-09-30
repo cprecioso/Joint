@@ -15,12 +15,14 @@ struct RejectedView: View {
 			Text("We can't access your calendar").font(.callout)
 			Text("Please allow access to Calendar data in the System Preferences.")
 			Button("Open System Preferences") {
-				NSWorkspace.shared.open(
-					URL(
-						string:
-							"x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"
-					)!)
-			}
+				#if os(macOS)
+					NSWorkspace.shared.open(
+						URL(
+							string:
+								"x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars"
+						)!)
+				#endif
+			}.padding()
 			Text("Once you've allowed access, please restart the app.")
 		}.padding()
 			.multilineTextAlignment(.center)
@@ -40,7 +42,7 @@ struct UnaskedView: View {
 						fn()
 					}
 				}
-			}
+			}.padding()
 			Text(
 				"This app doesn't connect to the internet, and it doesn't store your calendar data anywhere."
 			)
